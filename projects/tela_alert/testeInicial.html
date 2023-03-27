@@ -2,16 +2,33 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <title>Estudo JavaScript</title>
+    <title>Botão de alerta</title>
     <script src="codigo.js"></script>
-
+    <link href="estilo.css" rel="stylesheet"/>
+    </head>
     <body>
-      <p>Estudo de JavaScript</p>
-      <script>
-        alert("Funcionou");
-        //Alerta de alerta que imprime uma mensagem na tela//
-        document.write("Escrevendo no corpo da pagina");
-      </script>
+      <div class="conteiner1">
+        <h1>Estudo de JavaScript</h1>
+
+        <p class="texto">
+          Esse botão é para testar o funcionamento de um Alert.
+        </p>
+        <div class="tente">
+          <p>TENTE</p>
+        </div>
+
+        
+
+        <div class="alerta">
+          <script>
+            function alerta() {
+              alert("FUNCIONOU");
+            }
+          </script>
+          <div id="seta"></div>
+          <button onclick="alerta()">Exibir ALERTA</button>
+        </div>
+      </div>
     </body>
-  </head>
+  
 </html>
