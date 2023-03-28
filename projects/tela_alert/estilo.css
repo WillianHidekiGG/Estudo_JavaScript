@@ -17,8 +17,16 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Stay";
+  src: url("fontes/Stay\ and\ Shine.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
+  min-height: 550px;
+  min-width: 960px;
   height: 550px;
   background-image: linear-gradient(to top, #f26d50, #fc5853, #e55695);
 }
@@ -55,11 +63,15 @@ h1 {
   
 }
 
-.botao {
+#botao {
   display: inline;
   position: relative;
+  font-family:"Stay", 'Times New Roman', Times, serif ;
+  line-height: 40px;
   padding-top: 30px;
   padding-bottom: 30px;
+  font-size: 25px;
+  color:white ;
   border-radius: 25%;
   border: 0 solid;
   background-color: rgba(255, 12, 12, 0.89);
@@ -70,45 +82,45 @@ h1 {
   text-shadow: none;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-.botao:hover {
+#botao:hover {
   border: 1px solid;
-  box-shadow: inset 0 0 20px rgba(119, 4, 4, 0.5), 0 0 20px rgba(255, 255, 255, .2);
-  outline-color: rgba(218, 13, 13, 0.815);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgb(255, 0, 0);
   outline-offset: 15px;
-  text-shadow: 1px 1px 2px #ff2c2c; 
+  text-shadow: 1px 1px 2px #000000; 
 }
 
 @keyframes esqueda_direita {
   0% {
-    background-color: darkcyan;
+    background-color: transparent;
     left: 100px;
-    top: -50px;
+    top: -65px;
   }
   50% {
-    background-color: darkcyan;
-    left: 190px;
-    top: -50px;
+    background-color: transparent;
+    left: 160px;
+    top: -65px;
   }
   100% {
-    background-color: darkcyan;
+    background-color: transparent;
     left: 100px;
-    top: -50px;
+    top: -65px;
   }
 }
 
 @keyframes baixo_cima{
   0% {
-    background-color: darkcyan;
+    background-color: transparent;
     left: 265px;
     top: 50px;
   }
   50% {
-    background-color: darkcyan;
+    background-color: transparent;
     left: 265px;
-    top: -20px;
+    top: -10px;
   }
   100% {
-    background-color: darkcyan;
+    background-color: transparent;
     left: 265px;
     top: 50px;
   }
@@ -116,19 +128,19 @@ h1 {
 
 @keyframes direita_esquerda {
   0% {
-    background-color: darkcyan;
-    left: 450px;
-    top: -100px;
+    background-color: transparent;
+    left: 420px;
+    top: -120px;
   }
   50% {
-    background-color: darkcyan;
-    left: 330px;
-    top: -100px;
+    background-color: transparent;
+    left: 367px;
+    top: -120px;
   }
   100% {
-    background-color: darkcyan;
-    left: 450px;
-    top: -100px;
+    background-color:transparent;
+    left: 420px;
+    top: -120px;
   }
 }
 
@@ -142,7 +154,7 @@ h1 {
   border: 12px solid;
   border-color: darkcyan darkcyan transparent transparent;
   transform: rotate(45deg);
-  animation: esqueda_direita 4s;
+  animation: esqueda_direita 3s;
   animation-iteration-count: infinite;
 }
 
@@ -167,7 +179,7 @@ h1 {
   border: 12px solid;
   border-color: darkcyan darkcyan transparent transparent;
   transform: rotate(-45deg);
-  animation: baixo_cima 4s;
+  animation: baixo_cima 3s;
   animation-iteration-count: infinite;
 }
 
@@ -192,7 +204,7 @@ h1 {
   border: 12px solid;
   border-color: darkcyan darkcyan transparent transparent;
   transform: rotate(-135deg);
-  animation: direita_esquerda 4s;
+  animation: direita_esquerda 3s;
   animation-iteration-count: infinite;
 }
 
