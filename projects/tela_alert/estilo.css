@@ -11,6 +11,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Tequilla";
+  src: url("fontes/Tequilla Sunrise.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   height: 550px;
   background-image: linear-gradient(to top, #f26d50, #fc5853, #e55695);
@@ -18,67 +25,187 @@ body {
 
 .conteiner1 {
   background-image: linear-gradient(to top, #ffffff, #cecece);
-  width: 550px;
-  height: 400px;
+  text-align: center;
+  max-width: 550px;
+  max-height: 450px;
   border: 5px solid #c9c9c9;
   margin-top: 90px;
   margin-left: 400px;
-  text-align: center;
+  padding-bottom: 70px;
   border-radius: 5%;
 }
 
 h1 {
   font-family: "Revise", Times, serif;
+  font-size: 50px;
 }
 
 .texto {
+  display: inline;
   font-family: "Times New Roman", Times, serif;
   font-size: 25px;
 }
 
 .tente {
-    position:relative;
-    bottom:100px;
-  font-family: "Simple", Times, serif;
-  font-size: 100px;
-  padding-top: 0px;
+  display: inline;
+  position: relative;
+  font-family: "Tequilla", Times, serif;
+  line-height: 30px;
+  font-size: 40px;
+  
 }
 
-@keyframes vai_vem {
-    0%   {background-color:darkcyan; left:0px; top:0px;}
-    50%   {background-color:darkcyan; left:100px; top:0px;}
-    100%  {background-color:darkcyan; left:0px; top:0px;}
+.botao {
+  display: inline;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 25%;
+  border: 0 solid;
+  background-color: rgba(255, 12, 12, 0.89);
+  box-shadow: inset 0 0 20px rgba(236, 52, 52, 0.89);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-#seta {
-  position:relative;
-    left:100px;
-    top:20px;
-	height: 4px; width: 4px;
-	border: 12px solid;
-	border-color: 
-		darkcyan
-		darkcyan
-		transparent
-		transparent;
-	transform: rotate(45deg);
-    animation:vai_vem 4s;
-    animation-iteration-count: infinite;
-}
-
-#seta:before {
-	content: '';
-	position: absolute;
-	top: 0px; right: 0px;
-	display: block;
-	height: 20px; width: 24px;
-	background-color: darkcyan;
-	transform: 
-		rotate(-45deg) 
-		translate(2px, 1px);
+.botao:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(119, 4, 4, 0.5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(218, 13, 13, 0.815);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #ff2c2c; 
 }
 
-.botao{
-    position:relative;
-    bottom: 300px;
-    bottom: 50px;
+@keyframes esqueda_direita {
+  0% {
+    background-color: darkcyan;
+    left: 100px;
+    top: -50px;
+  }
+  50% {
+    background-color: darkcyan;
+    left: 190px;
+    top: -50px;
+  }
+  100% {
+    background-color: darkcyan;
+    left: 100px;
+    top: -50px;
+  }
 }
+
+@keyframes baixo_cima{
+  0% {
+    background-color: darkcyan;
+    left: 265px;
+    top: 50px;
+  }
+  50% {
+    background-color: darkcyan;
+    left: 265px;
+    top: -20px;
+  }
+  100% {
+    background-color: darkcyan;
+    left: 265px;
+    top: 50px;
+  }
+}
+
+@keyframes direita_esquerda {
+  0% {
+    background-color: darkcyan;
+    left: 450px;
+    top: -100px;
+  }
+  50% {
+    background-color: darkcyan;
+    left: 330px;
+    top: -100px;
+  }
+  100% {
+    background-color: darkcyan;
+    left: 450px;
+    top: -100px;
+  }
+}
+
+
+#seta_esq {
+  position: relative;
+  left: 100px;
+  top: 20px;
+  height: 4px;
+  width: 4px;
+  border: 12px solid;
+  border-color: darkcyan darkcyan transparent transparent;
+  transform: rotate(45deg);
+  animation: esqueda_direita 4s;
+  animation-iteration-count: infinite;
+}
+
+#seta_esq:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  height: 20px;
+  width: 24px;
+  background-color: darkcyan;
+  transform: rotate(-45deg) translate(2px, 1px);
+}
+
+#seta_bix {
+  position: relative;
+  left: 100px;
+  top: 20px;
+  height: 4px;
+  width: 4px;
+  border: 12px solid;
+  border-color: darkcyan darkcyan transparent transparent;
+  transform: rotate(-45deg);
+  animation: baixo_cima 4s;
+  animation-iteration-count: infinite;
+}
+
+#seta_bix:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  height: 20px;
+  width: 24px;
+  background-color: darkcyan;
+  transform: rotate(-45deg) translate(2px, 1px);
+}
+
+#seta_dir {
+  position: relative;
+  left: 100px;
+  top: 20px;
+  height: 4px;
+  width: 4px;
+  border: 12px solid;
+  border-color: darkcyan darkcyan transparent transparent;
+  transform: rotate(-135deg);
+  animation: direita_esquerda 4s;
+  animation-iteration-count: infinite;
+}
+
+#seta_dir:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  height: 20px;
+  width: 24px;
+  background-color: darkcyan;
+  transform: rotate(-45deg) translate(2px, 1px);
+}
+
+ 
