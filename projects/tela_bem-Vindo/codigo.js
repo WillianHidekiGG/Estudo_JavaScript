@@ -11,22 +11,19 @@ alert("o valor é 1: " + 10);
 no alerta já soma os valores*/
 
 var nome;
-function alert() {
-Swal.fire({
-  title: 'Qual seu nome?',
+async function alert() {
+const { value: nome } = await Swal.fire({
   input: 'text',
-  icon: 'warning',
-  confirmButtonColor: '#3085d6',
-  confirmButtonText: 'Confirmar!'
-}).then((result) => {
-  if (result.isConfirmed) {
-
-    Swal.fire(
-      'BEM-VINDO!',
-      '',
-      'success'
-    )
-  }
+  inputLabel: 'Qual seu nome?',
+  inputPlaceholder: 'escreva seu nome aqui',
+  showCancelButton: true
 })
+
+if (nome) {
+  Swal.fire({
+    title:'BEM-VINDO ' + nome,
+    icon:'success',
+  })
+}
 }
   
