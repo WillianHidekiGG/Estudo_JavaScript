@@ -12,18 +12,20 @@ no alerta já soma os valores*/
 
 var nome;
 async function alert() {
-const { value: nome } = await Swal.fire({
-  input: 'text',
-  inputLabel: 'Qual seu nome?',
-  inputPlaceholder: 'escreva seu nome aqui',
-  showCancelButton: true
-})
+  const { value: nome } = await Swal.fire({
+    icon: "question",
+    input: "text",
+    title: "Qual seu nome?",
+    inputPlaceholder: "escreva seu nome aqui",
+    showCancelButton: true,
+  });
 
-if (nome) {
-  Swal.fire({
-    title:'BEM-VINDO ' + nome,
-    icon:'success',
-  })
+  if (nome) {
+    Swal.fire({
+      title: "Bem-Vindo " + nome + " !",
+      icon: "success",
+      background:
+        "#fff url(https://static8.depositphotos.com/1040728/935/i/450/depositphotos_9352351-stock-photo-party-balloons-flying.jpg)",
+    });
+  }
 }
-}
-  
