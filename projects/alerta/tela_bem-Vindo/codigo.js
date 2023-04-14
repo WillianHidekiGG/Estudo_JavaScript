@@ -1,16 +1,7 @@
-Nightly.isDark = true;
-
-settingsMenuHtml =
-  '<input type="checkbox" onclick="Nightly.isDark = !Nightly.isDark; setCSSLink()">';
-
-
-
-
-
-
 var nome;
 async function alert() {
   const { value: nome } = await Swal.fire({
+    background: "#5F9EA0",
     icon: "question",
     iconColor: "yellow",
     input: "text",
@@ -40,8 +31,8 @@ async function alertaSub() {
       '<input id="valor2" class="swal2-input">',
     focusConfirm: false,
     background:
-      "#fff  url(https://s4.static.brasilescola.uol.com.br/be/2023/02/sinal-de-mais-menos-vezes-e-divisao-as-quatro-operacoes-matematicas-basicas-em-blocos-de-madeira-coloridos.jpg)",
-      color: "white",
+      "#fff  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfe9r_tycLUQjMLiasGmjNPnYiZWXyksezy_h8yvLyheCLgHQheHBlxAPeSeE1Er01_5c&usqp=CAU) center ",
+    color: "#000080",
     preConfirm: () => {
       return [
         document.getElementById("valor1").value -
@@ -54,7 +45,7 @@ async function alertaSub() {
     Swal.fire(JSON.stringify(formValues), {
       icon: "success",
       background:
-        "#fff url(https://s4.static.brasilescola.uol.com.br/be/2023/02/sinal-de-mais-menos-vezes-e-divisao-as-quatro-operacoes-matematicas-basicas-em-blocos-de-madeira-coloridos.jpg)",
+        "#fff url(https://s4.static.brasilescola.uol.com.br/be/2023/02/sinal-de-mais-menos-vezes-e-divisao-as-quatro-operacoes-matematicas-basicas-em-blocos-de-madeira-coloridos.jpg) center no-repeat",
       title:
         document.getElementById("valor1").value +
         document.getElementById("valor2").value,
@@ -73,8 +64,8 @@ async function alertaMult() {
       '<input id="valor2" class="swal2-input">',
     focusConfirm: false,
     background:
-      "#fff url(https://s4.static.brasilescola.uol.com.br/be/2023/02/sinal-de-mais-menos-vezes-e-divisao-as-quatro-operacoes-matematicas-basicas-em-blocos-de-madeira-coloridos.jpg)",
-    color: "white",
+      "#fff  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfe9r_tycLUQjMLiasGmjNPnYiZWXyksezy_h8yvLyheCLgHQheHBlxAPeSeE1Er01_5c&usqp=CAU) center ",
+    color: "#000080",
     preConfirm: () => {
       return [
         document.getElementById("valor1").value *
@@ -91,8 +82,7 @@ async function alertaMult() {
         document.getElementById("valor1").value +
         document.getElementById("valor2").value,
       background:
-        "#fff url(https://s4.static.brasilescola.uol.com.br/be/2023/02/sinal-de-mais-menos-vezes-e-divisao-as-quatro-operacoes-matematicas-basicas-em-blocos-de-madeira-coloridos.jpg)",
-    });
+        "#fff url(https://s4.static.brasilescola.uol.com.br/be/2023/02/sinal-de-mais-menos-vezes-e-divisao-as-quatro-operacoes-matematicas-basicas-em-blocos-de-madeira-coloridos.jpg) center no-repeat",
+      });
   }
 }
-
