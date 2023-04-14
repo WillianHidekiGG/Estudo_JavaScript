@@ -58,3 +58,7 @@ body {
   padding: 0.5em 2em;
   border-radius: 0.7em;
 }
+.alerta{
+  background: rgba(185, 24, 24, 0.8);
+  backdrop-filter: blur(2px);
+}
