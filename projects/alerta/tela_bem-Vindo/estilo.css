@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Astrella";
+  src: url("fonte/Astrella.otf") format("truetype"), url("fonte/Astrella.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   height: auto;
   width: auto;
@@ -9,7 +16,7 @@ body {
 
 .conteiner {
   width: 340px;
-  height: 400px;
+  height: 480px;
   background: #07182e;
   position: relative;
   display: flex;
@@ -64,6 +71,9 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  font-family: "Astrella",Arial, Helvetica, sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #botao {
@@ -90,7 +100,7 @@ body {
   font-size: 0.9em;
 }
 
-#botao2 {
+.botao{
   --clr-font-main: hsla(0 0% 20% / 100);
   --btn-bg-1: hsla(194 100% 69% / 1);
   --btn-bg-2: hsla(217 100% 56% / 1);
@@ -124,56 +134,22 @@ body {
     inset -4px -4px 8px rgba(19, 95, 216, 0.35);
 }
 
-#botao2:hover {
+.botao:hover {
   background-position: right top;
 }
 
-#botao2:is(:focus, :focus-within, :active) {
+
+
+.botao:is(:focus, :focus-within, :active) {
   outline: none;
   box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
 }
 
-#botao3 {
-  --clr-font-main: hsla(0 0% 20% / 100);
-  --btn-bg-1: hsla(194 100% 69% / 1);
-  --btn-bg-2: hsla(217 100% 56% / 1);
-  --btn-bg-color: hsla(360 100% 100% / 1);
-  --radii: 0.5em;
-  cursor: pointer;
-  padding: 0.9em 1.4em;
-  min-width: 120px;
-  min-height: 44px;
-  font-size: var(--size, 1rem);
-  font-family: "Segoe UI", system-ui, sans-serif;
-  font-weight: 500;
-  transition: 0.8s;
-  width: 300px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 20px;
-  background-size: 280% auto;
-  background-image: linear-gradient(
-    325deg,
-    var(--btn-bg-2) 0%,
-    var(--btn-bg-1) 55%,
-    var(--btn-bg-2) 90%
-  );
-  border: none;
-  border-radius: var(--radii);
-  color: var(--btn-bg-color);
-  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
-    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
-    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
-    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
-}
 
-#botao3:hover {
-  background-position: right top;
-}
 
-#botao3:is(:focus, :focus-within, :active) {
-  outline: none;
-  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+.alerta{
+  background-color: rgba(219, 225, 226, 0.4);
+ -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
-
 
