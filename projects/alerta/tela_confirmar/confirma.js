@@ -1,6 +1,9 @@
 async function alert(){
      
     const { value: sair } = await Swal.fire({
+      showClass: {
+        popup: "animate__animated animate__zoomInDown",
+      },
       icon: "question",
       iconColor: "black",
       background:
@@ -14,9 +17,12 @@ async function alert(){
       cancelButtonColor: "#FF6347",
       cancelButtonText: `Cancelar`,
       confirmButtonText: `Ir para o GOOGLE`,
-      color:"black",
+      color: "black",
       customClass: {
-        popup: "alerta",
+        container: "alerta",
+      },
+      hideClass: {
+        popup: "animate__animated animate__zoomOutUp",
       },
     }).then((result) => {
       if (result.value) {
