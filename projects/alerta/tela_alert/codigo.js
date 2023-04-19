@@ -9,6 +9,10 @@ function alert() {
     icon: "success",
     title: "FUNCIONOU!",
     footer:
-      '<a href="https://github.com/WolfWillian/Estudo_JavaScript.git">Confira meu GitHub</a>',
+      '<span><a href="https://github.com/WolfWillian/WolfWillian">Confira meu GitHub</a></span>',
+    customClass: {
+      popup: "alerta",
+      footer: "git",
+    },
   });
 }
