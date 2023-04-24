@@ -12,11 +12,11 @@ async function alert() {
     inputPlaceholder: "escreva seu nome aqui",
     showCancelButton: true,
     color: "black",
-    customClass: {
-      container: "alerta",
-    },
     hideClass: {
       popup: "animate__animated animate__zoomOut",
+    },
+    customClass: {
+      container: "alerta",
     },
   });
 
