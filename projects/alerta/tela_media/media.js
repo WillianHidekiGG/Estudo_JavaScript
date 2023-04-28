@@ -1,9 +1,23 @@
-var notaA = 8;
-var notaB = 7;
-
-var media = (notaA+notaB)/2;
-if(media => 7){
-  alert("APROVADO " + "media: " + media);
-}else{
-    alert("REPROVADO " + "media: " + media);
+async function calcularMedia() {
+  var notaA = parseInt(document.getElementById("nota1").value);
+  var notaB = parseInt(document.getElementById("nota2").value);
+  var media = (notaA+notaB)/2;
+const { value: formValues } = await Swal.fire({
+  value: () => {
+    if (media >= 7) {
+      Swal.fire({
+        icon: "success",
+        title: "Aprovado",
+        text:"Aluno esta com a media " + media,
+      });
+    }
+    if (media <= 7) {
+      Swal.fire({
+        icon: "error",
+        title: "Reprovado",
+        text: "Aluno esta com a media " + media,
+      });
+    }
+  },
+});
 }
