@@ -41,7 +41,7 @@ async function alert() {
   }
 }
 
-/*async function alertaSoma() {
+async function alertaSoma() {
   const { value: formValues } = await Swal.fire({
     showClass: {
       popup: "animate__animated animate__lightSpeedInLeft",
@@ -60,7 +60,7 @@ async function alert() {
     hideClass: {
       popup: "animate__animated animate__lightSpeedOutRight",
     },
-    preConfirm: () => {
+    preConfirm: (soma) => {
       Swal.fire({
         showClass: {
           popup: "animate__animated animate__lightSpeedInLeft",
@@ -68,8 +68,8 @@ async function alert() {
         icon: "success",
         title: "O resultado é:",
         text:
-          document.getElementById("valor1").value +
-          document.getElementById("valor2").value,
+          parseInt(document.getElementById("valor1").value) +
+          parseInt(document.getElementById("valor2").value),
         background:
           "#fff  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfe9r_tycLUQjMLiasGmjNPnYiZWXyksezy_h8yvLyheCLgHQheHBlxAPeSeE1Er01_5c&usqp=CAU) center ",
         color: "Black",
@@ -79,7 +79,7 @@ async function alert() {
       });
     },
   });
-}*/
+}
 
 async function alertaSub() {
   const { value: formValues } = await Swal.fire({
@@ -111,8 +111,8 @@ async function alertaSub() {
         icon: "success",
         title: "O resultado é:",
         text:
-          document.getElementById("valor1").value -
-          document.getElementById("valor2").value,
+          parseInt(document.getElementById("valor1").value) -
+          parseInt(document.getElementById("valor2").value),
         background:
           "#fff  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfe9r_tycLUQjMLiasGmjNPnYiZWXyksezy_h8yvLyheCLgHQheHBlxAPeSeE1Er01_5c&usqp=CAU) center",
         color: "Black",
@@ -135,8 +135,8 @@ async function alertaSub() {
       background:
         "#fff url(https://s4.static.brasilescola.uol.com.br/be/2023/02/sinal-de-mais-menos-vezes-e-divisao-as-quatro-operacoes-matematicas-basicas-em-blocos-de-madeira-coloridos.jpg) center no-repeat",
       title:
-        document.getElementById("valor1").value +
-        document.getElementById("valor2").value,
+        parseInt(document.getElementById("valor1").value) -
+        parseInt(document.getElementById("valor2").value),
       customClass: {
         container: "alerta",
       },
@@ -177,8 +177,8 @@ async function alertaMult() {
         icon: "success",
         title: "O resultado é:",
         text:
-          document.getElementById("valor1").value *
-          document.getElementById("valor2").value,
+          parseInt(document.getElementById("valor1").value) *
+          parseInt(document.getElementById("valor2").value),
         background:
           "#fff  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfe9r_tycLUQjMLiasGmjNPnYiZWXyksezy_h8yvLyheCLgHQheHBlxAPeSeE1Er01_5c&usqp=CAU) center ",
         color: "Black",
@@ -223,8 +223,8 @@ async function alertaDiv() {
         icon: "success",
         title: "O resultado é:",
         text:
-          document.getElementById("valor1").value /
-          document.getElementById("valor2").value,
+          parseInt(document.getElementById("valor1").value) /
+          parseInt(document.getElementById("valor2").value),
         background:
           "#fff  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfe9r_tycLUQjMLiasGmjNPnYiZWXyksezy_h8yvLyheCLgHQheHBlxAPeSeE1Er01_5c&usqp=CAU) center ",
         color: "Black",
