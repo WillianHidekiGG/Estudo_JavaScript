@@ -95,7 +95,7 @@ async function alertaSub() {
       '<input id="valor2" class="swal2-input">',
     focusConfirm: false,
     background:
-      "#fff  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfe9r_tycLUQjMLiasGmjNPnYiZWXyksezy_h8yvLyheCLgHQheHBlxAPeSeE1Er01_5c&usqp=CAU) center ",
+      "#fff  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfe9r_tycLUQjMLiasGmjNPnYiZWXyksezy_h8yvLyheCLgHQheHBlxAPeSeE1Er01_5c&usqp=CAU) center",
     color: "Black",
     customClass: {
       container: "alerta",
@@ -114,7 +114,7 @@ async function alertaSub() {
           document.getElementById("valor1").value -
           document.getElementById("valor2").value,
         background:
-          "#fff  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfe9r_tycLUQjMLiasGmjNPnYiZWXyksezy_h8yvLyheCLgHQheHBlxAPeSeE1Er01_5c&usqp=CAU) center ",
+          "#fff  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfe9r_tycLUQjMLiasGmjNPnYiZWXyksezy_h8yvLyheCLgHQheHBlxAPeSeE1Er01_5c&usqp=CAU) center",
         color: "Black",
         customClass: {
           container: "alerta",

@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "Astrella";
+  src: url("fonte/Astrella.otf") format("truetype"), url("fonte/Astrella.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   overflow: hidden;
   height: 100vh;
   background-color: #1e38fc;
-  /* background: radial-gradient( circle at center,#1E38FC 0%, #172ABD 25%, #0D1970 50%, #0F1C7D 75% ,#0A1357 100%); */
   background-image: linear-gradient(
       45deg,
       transparent 20%,
@@ -31,6 +38,39 @@ body {
 
 .conteiner1:hover {
   box-shadow: -10px 10px 3px -2px rgba(14, 0, 121, 0.9);
+}
+
+#Titulo1{
+  font-family: 'Astrella', Times, serif;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: -30px;
+  font-size: 50px;
+}
+
+.nota{
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 4%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.input[type=number] {
+margin-left: 4%;
+width:90%;
+height: 25px;
+border: none;
+box-sizing: border-box;
+border-top:3px solid rgb(183, 181, 181);
+border-bottom: 3px solid rgb(183, 181, 181);
+-webkit-transition: 0.5s;
+transition: 0.5s;
+appearance: textfield;
+outline: none;
+}
+.input[type=number]:focus {
+border-top:3px solid rgb(93, 93, 93);
+border-bottom: 3px solid rgb(93, 93, 93);
 }
 
 #botao {
