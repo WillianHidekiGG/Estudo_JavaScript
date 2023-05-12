@@ -223,7 +223,7 @@ async function alertaDiv() {
         icon: "success",
         title: "O resultado é:",
         text:
-          parseInt(document.getElementById("valor1").value) /
+          PT-brparseInt(document.getElementById("valor1").value) /
           parseInt(document.getElementById("valor2").value),
         background:
           "#fff  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfe9r_tycLUQjMLiasGmjNPnYiZWXyksezy_h8yvLyheCLgHQheHBlxAPeSeE1Er01_5c&usqp=CAU) center ",

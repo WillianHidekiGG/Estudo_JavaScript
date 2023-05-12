@@ -11,9 +11,20 @@
 </head>
 <body>
     <h1>Evento mouse</h1>
-    <div id="cores" onmouseover="sobre()" onmousedown="baixo()" onmousemove="movendo()" onmouseout="saindo()" onmouseup="cima()">
+    <!-- <div id="cores" onmousedown="baixo()" onmousemove="movendo()" onmouseout="saindo()" onmouseup="cima()"> -->
     </div>
-
+    <div class="conteiner">
+    <section class="sobreposicao">
+    <div id="sobre" class="circulo" onmouseover="sobre()"></div>
+    </section>
+    <img class="imgOlho" src="../mouse/img/olho.png" height="100px" width="150px" onmouseover="sobre()" alt="imagem de um olho"></img>
+    </div>
+    <div class="conteiner">
+    <section class="sobreposicao">
+    <div id="sobre" class="circulo" onmouseover="sobre()"></div>
+    </section>
+    <img class="imgOlho" src="../mouse/img/olho.png" height="100px" width="150px" onmouseover="sobre()" alt="imagem de um olho"></img>
+    </div>
     <div>Log de ocorrencia</div>
     <div id="log"></div>
 </body>

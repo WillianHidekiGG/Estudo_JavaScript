@@ -1,5 +1,5 @@
 function sobre(){
-    document.getElementById("cores").style.backgroundColor="red";
+    document.getElementById("sobre").style.backgroundColor="red";
     document.getElementById("log").innerHTML += "sobre a div cor: vermelha<br>";
 }
 
