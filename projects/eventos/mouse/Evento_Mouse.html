@@ -11,21 +11,28 @@
 </head>
 <body>
     <h1>Evento mouse</h1>
-    <!-- <div id="cores" onmousedown="baixo()" onmousemove="movendo()" onmouseout="saindo()" onmouseup="cima()"> -->
-    </div>
+    <!-- <div id="cores"  onmouseout="saindo()" > </div>-->
     <div class="conteiner">
-    <section class="sobreposicao">
+    <section>
     <div id="sobre" class="circulo" onmouseover="sobre()"></div>
     </section>
     <img class="imgOlho" src="../mouse/img/olho.png" height="100px" width="150px" onmouseover="sobre()" alt="imagem de um olho"></img>
-    </div>
-    <div class="conteiner">
-    <section class="sobreposicao">
-    <div id="sobre" class="circulo" onmouseover="sobre()"></div>
-    </section>
-    <img class="imgOlho" src="../mouse/img/olho.png" height="100px" width="150px" onmouseover="sobre()" alt="imagem de um olho"></img>
-    </div>
     <div>Log de ocorrencia</div>
-    <div id="log"></div>
+    <div id="log_sobre"></div>
+    </div>
+    <div class="conteiner">
+    <img id="baixo_cima" onmousedown="baixo()" onmouseup="cima()" class="imgOlho" src="../mouse/img/olho.png" height="100px" width="150px" onmouseover="sobre()" alt="imagem de um olho"></img>
+    <div>Log de ocorrencia</div>
+    <div id="log_baixo"></div>
+        <br>
+    <div class="conteiner">
+    <section>
+    <div id="movendo" class="circulo"  onmousemove="movendo()"></div>
+    </section>
+    <img class="imgOlho" src="../mouse/img/olho.png" height="100px" width="150px" onmouseover="sobre()" alt="imagem de um olho"></img>
+    <div>Log de ocorrencia</div>
+    <div id="log_sobre"></div>
+    </div>
+    </div>  
 </body>
 </html>

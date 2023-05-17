@@ -1,3 +1,8 @@
+body{
+    width: 600px;
+    height: 900px;
+}
+
 #cores {
   width: 200px;
   height: 200px;
@@ -5,21 +10,28 @@
 }
 
 .conteiner {
+    display:  inline-block;
+    overflow:auto; 
   border: 5px solid black;
   width: 150px;
   height: 200px;
 }
 
-.circulo{
-  position: fixed;
+.circulo {
+  position: absolute;
   width: 80px;
   height: 85px;
   border-radius: 50%;
-  left:46px;
-  top:294px;
   background-color: gray;
   z-index: -1;
 }
 
+#sobre{
+  left: 46px;
+  top: 93px;
+}
 
-
+#movendo {
+  left: 216px;
+  top: 95px;
+}

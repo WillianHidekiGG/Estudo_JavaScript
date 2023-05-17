@@ -1,11 +1,11 @@
 function sobre(){
     document.getElementById("sobre").style.backgroundColor="red";
-    document.getElementById("log").innerHTML += "sobre a div cor: vermelha<br>";
+    document.getElementById("log_sobre").innerHTML += "sobre a div cor: vermelha<br>";
 }
 
-function baixo(){
-    document.getElementById("cores").style.backgroundColor="blue";
-    document.getElementById("log").innerHTML += "clicando na div cor: azul<br>";
+function baixo() {
+  document.getElementById("baixo_cima").style.backgroundColor = "blue";
+  document.getElementById("log_baixo").innerHTML += "clicando na div cor: azul<br>";
 }
 
 function movendo() {
@@ -19,6 +19,6 @@ function saindo() {
 }
 
 function cima() {
-  document.getElementById("cores").style.backgroundColor = "pink";
-  document.getElementById("log").innerHTML += "soltando o mouse na div cor: rosa<br>";
+  document.getElementById("baixo_cima").style.backgroundColor = "pink";
+  document.getElementById("log_baixo").innerHTML += "soltando o mouse na div cor: rosa<br>";
 }
