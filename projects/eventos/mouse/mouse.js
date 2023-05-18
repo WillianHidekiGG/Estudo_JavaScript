@@ -19,6 +19,5 @@ function movendo() {
 
 
 function saindo() {
-  document.getElementById("cores").style.backgroundColor = "gray";
-  document.getElementById("log_sobre").innerHTML += "cinza";
+  document.getElementById("sobre").style.backgroundColor = "gray";
 }
