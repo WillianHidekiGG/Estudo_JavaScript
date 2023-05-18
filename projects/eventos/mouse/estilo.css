@@ -1,23 +1,29 @@
 body{
-    width: 600px;
+    width: auto;
     height: 900px;
+    background-color: antiquewhite;
 }
 
 #cores {
+  position: absolute;
+  width: 80px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: gray;
+  z-index: -1;;
+}
+
+.conteiner{
+  display: inline;
+  float: left;
+  overflow:auto; 
+  border: 5px solid black;
   width: 200px;
   height: 200px;
-  background-color: gray;
+  margin-right: 5px;
 }
 
-.conteiner {
-    display:  inline-block;
-    overflow:auto; 
-  border: 5px solid black;
-  width: 150px;
-  height: 200px;
-}
-
-.circulo {
+.circulo{
   position: absolute;
   width: 80px;
   height: 85px;
@@ -26,12 +32,31 @@ body{
   z-index: -1;
 }
 
+.imgOlho{
+  margin: 0px 25px;
+}
+
 #sobre{
-  left: 46px;
-  top: 93px;
+  margin:8px 65px auto ;
 }
 
 #movendo {
-  left: 216px;
-  top: 95px;
+  margin:8px 65px auto;
+}
+
+#olho_baixo_cima{
+    margin: 0px 25px;
+}
+
+#baixo_cima{
+    margin:8px 65px auto;
+}
+
+
+.log {
+  text-align: center;
+}
+
+#log_sobre{
+    text-align: center;
 }
