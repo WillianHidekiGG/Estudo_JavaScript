@@ -10,8 +10,8 @@
     <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
+    <div id="conteiner">
     <h1>Evento mouse</h1>
-    <!-- <div id="cores"  onmouseout="saindo()" > </div>-->
     <div class="conteiner">
     <section>
     <div id="sobre" class="circulo"></div>
@@ -23,19 +23,20 @@
     <div class="conteiner">
     <section>
     <div id="baixo_cima" class="circulo" ></div>
-    <img  id="olho_baixo_cima" class="imgOlho" onmousedown="baixo()" onmouseup="cima()" onmouseout="saindo()"src="../mouse/img/olho.png" height="100px" width="150px" alt="imagem de um olho"></img>
+    <img  id="olho_baixo_cima" class="imgOlho" onmousedown="baixo()" onmouseup="cima()" onmouseout="saindo2()"src="../mouse/img/olho.png" height="100px" width="150px" alt="imagem de um olho"></img>
     <div class="log">Cor do olho</div>
-    <div id="log_baixo"></div>
+    <div id="log_baixo" class="log_baixo_cima"></div>
     </section>
     </div>
     <div>
     <div class="conteiner">
     <section>
-    <div id="movendo" class="circulo"  onmousemove="movendo()"></div>
-    <img class="imgOlho" src="../mouse/img/olho.png" height="100px" width="150px" alt="imagem de um olho"></img>
+    <div id="movendo" class="circulo"></div>
+    <img class="imgOlho" src="../mouse/img/olho.png" height="100px" width="150px" onmousemove="movendo()" onmouseout="saindo3()"alt="imagem de um olho"></img>
     <div class="log">Cor do olho</div>
-    <div id="log_movendo"></div>
+    <div id="log_movendo"  class="log_movendo"></div>
     </section>
+    </div>
     </div>
     </div>  
 </body>

@@ -5,6 +5,7 @@ function sobre(){
 function cima() {
   document.getElementById("baixo_cima").style.backgroundColor = "pink";
   document.getElementById("log_baixo").innerHTML += "cor do olho: rosa<br>";
+  
 }
 
 function baixo() {
@@ -20,4 +21,15 @@ function movendo() {
 
 function saindo() {
   document.getElementById("sobre").style.backgroundColor = "gray";
+  document.getElementById("log_sobre").innerHTML = "";
+}
+
+function saindo2() {
+  document.getElementById("baixo_cima").style.backgroundColor = "gray";
+  document.getElementById("log_baixo").innerHTML = "";
+}
+
+function saindo3() {
+  document.getElementById("movendo").style.backgroundColor = "gray";
+  document.getElementById("log_movendo").innerHTML = "";
 }

@@ -1,17 +1,15 @@
 body{
     width: auto;
-    height: 900px;
+    height: auto;
     background-color: antiquewhite;
 }
-
-#cores {
-  position: absolute;
-  width: 80px;
-  height: 85px;
-  border-radius: 50%;
-  background-color: gray;
-  z-index: -1;;
-}
+ #conteiner{
+  width: 70%;
+  height: 300px;
+  background-color: rgb(180, 200, 128);
+  border-radius: 10px;
+  margin: auto;
+ }
 
 .conteiner{
   display: inline;
@@ -20,28 +18,36 @@ body{
   border: 5px solid black;
   width: 200px;
   height: 200px;
-  margin-right: 5px;
+  margin-right: 15px;
+  margin-left: 35px;
 }
 
+h1{
+  text-align: center;
+}
 .circulo{
-  position: absolute;
+  position: relative;
   width: 80px;
   height: 85px;
   border-radius: 50%;
   background-color: gray;
-  z-index: -1;
+  z-index: 1;
+  transition: all 0.3s;
 }
 
 .imgOlho{
+  position: relative;
+  top: -94px;
   margin: 0px 25px;
+  z-index: 1;
 }
 
 #sobre{
-  margin:8px 65px auto ;
+  margin:8px 63px auto ;
 }
 
 #movendo {
-  margin:8px 65px auto;
+  margin:8px 63px auto;
 }
 
 #olho_baixo_cima{
@@ -49,14 +55,21 @@ body{
 }
 
 #baixo_cima{
-    margin:8px 65px auto;
+    margin:8px 63px auto;
 }
 
 
 .log {
+  margin-top: -90px;
   text-align: center;
 }
 
 #log_sobre{
+    text-align: center;
+}
+#log_baixo_cima{
+    left: 50%;
+}
+#log_movendo{
     text-align: center;
 }
