@@ -1,14 +1,30 @@
+@font-face {
+  font-family: "Heavy";
+  src: url("font/HeavyHeapPg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bigfat";
+  src: url("font/BigfatScript.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
     width: auto;
     height: auto;
-    background-color: antiquewhite;
+    background-color: rgb(192, 66, 120);
 }
- #conteiner{
-  width: 70%;
-  height: 300px;
+#conteiner{
+  width: 75%;
+  height: 380px;
   background-color: rgb(180, 200, 128);
   border-radius: 10px;
   margin: auto;
+  box-shadow: 15px 15px 30px rgba(255, 255, 255,0.3),
+             -15px -15px 30px rgba(19, 19, 19,0.3 );
  }
 
 .conteiner{
@@ -16,19 +32,24 @@ body{
   float: left;
   overflow:auto; 
   border: 5px solid black;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 280px;
+  margin-top: -30px;
   margin-right: 15px;
   margin-left: 35px;
 }
 
 h1{
   text-align: center;
+  font-family:'Heavy', Times, serif;
+  font-size: 55px;
+  letter-spacing: 3px;
 }
 .circulo{
   position: relative;
   width: 80px;
   height: 85px;
+  top:15px;
   border-radius: 50%;
   background-color: gray;
   z-index: 1;
@@ -37,9 +58,16 @@ h1{
 
 .imgOlho{
   position: relative;
-  top: -94px;
+  top: -78px;
   margin: 0px 25px;
   z-index: 1;
+}
+
+p{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 19px;
+  text-align: center;
+  font-weight: bolder;
 }
 
 #sobre{
@@ -60,16 +88,25 @@ h1{
 
 
 .log {
-  margin-top: -90px;
+  margin-top: -60px;
   text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 #log_sobre{
     text-align: center;
+    font-size: 18px;
+    font-family:'Bigfat', Times, serif;
 }
-#log_baixo_cima{
-    left: 50%;
+#log_baixo{
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    font-family:'Bigfat', Times, serif;
 }
 #log_movendo{
     text-align: center;
-}
+    font-size: 18px;
+    font-family:'Bigfat', Times, serif;
+  }
