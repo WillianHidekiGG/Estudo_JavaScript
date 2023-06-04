@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Cheerful";
+  src: url("font/Cheerful.ttf") format("truetype"),url("font/Cheerful.otf") format("opentype");;
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
     width: auto;
     height: auto;
@@ -49,7 +56,8 @@ h1{
   position: relative;
   width: 80px;
   height: 85px;
-  top:15px;
+  top:5px;
+  left: 3px;
   border-radius: 50%;
   background-color: gray;
   z-index: 1;
@@ -58,14 +66,14 @@ h1{
 
 .imgOlho{
   position: relative;
-  top: -78px;
-  margin: 0px 25px;
+  top: -88px;
+  margin: 0px 35px;
   z-index: 1;
 }
 
 p{
-  font-family:'Times New Roman', Times, serif;
-  font-size: 19px;
+  font-family:'Cheerful', Times, serif;
+  font-size: 10px;
   text-align: center;
   font-weight: bolder;
 }
@@ -79,7 +87,7 @@ p{
 }
 
 #olho_baixo_cima{
-    margin: 0px 25px;
+    margin: 0px 35px;
 }
 
 #baixo_cima{
@@ -91,7 +99,8 @@ p{
   margin-top: -60px;
   text-align: center;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 15px;
+  font-family: 'Cheerful', Times, serif;
 }
 
 #log_sobre{
