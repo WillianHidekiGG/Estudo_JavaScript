@@ -1,7 +1,7 @@
 async function calcularIMC() {
   var peso = parseFloat(document.getElementById("peso").value);
-  var altura = parseFloat(document.getElementById("altura").value);
-  var imc = altura
+  var altura = parseFloat(document.getElementById("altura").value)/100;
+  var imc = (peso/(altura*altura));
   document.getElementById("altura").style.borderColor = "#ffffff";
   document.getElementById("altura").style.backgroundColor = "#ffffff";
   document.getElementById("peso").style.borderColor = "#ffffff";
@@ -10,7 +10,7 @@ async function calcularIMC() {
 
 Swal.fire({
   didOpen: () =>{
-    if(peso == ""){
+    if(peso == "" ){
     document.getElementById("peso").style.borderColor = "red";
     document.getElementById("peso").style.backgroundColor = "#ffa5e5";
     document.getElementById("peso").focus;
@@ -28,20 +28,51 @@ Swal.fire({
       title:"Falta infomação",
       text:"Coloque seu altura",
     });
-  };
-
-  
-   if(imc == 18){
+  } else if(imc < "18"){
     Swal.fire({
       icon:"warning",
       title:"ABAIXO DO PESO",
-      text:"Seu IMC é " + imc + ", consulte um profissional da saude para mais orientação",
+      text:"Procure um profissional da saúde para mais informações",
     });
-  }
+   }else if(imc < "25"){
+     Swal.fire({
+       icon:"success",
+       title:"PESO IDEAL",
+       text:"Mantenha o peso para melhor condição de saúde",
+     });
+   }else if(imc < "30"){
+     Swal.fire({
+       icon:"warning",
+       title:"SOBRE PESO",
+       text:"Fique atento!",
+     });
+   }else if(imc < "35"){
+     Swal.fire({
+       icon:"warning",
+       title:"OBSIDADE GRAU I",
+       text:"Procure um profissional da saúde para mais informações",
+     });
+   }else if(imc < "40"){
+     Swal.fire({
+       icon:"warning",
+       title:"OBSIDADE GRAU II",
+       text:"Procure um profissional da saúde para mais informações",
+     });
+   }else{
+     Swal.fire({
+       icon:"warning",
+       title:"OBSIDADE GRAU III",
+       text:"URGENTE! Procure um profissional da saúde para mais informações",
+     });
+   };
 
+  
+  
   },
 
     });
+
+    
     
     
 
