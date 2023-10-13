@@ -1,6 +1,6 @@
 async function calcularIMC() {
   var peso = parseFloat(document.getElementById("peso").value);
-  var altura = parseFloat(document.getElementById("altura").value)/100;
+  var altura = parseFloat(document.getElementById("altura").value);
   var imc = (peso/(altura*altura));
   document.getElementById("altura").style.borderColor = "#ffffff";
   document.getElementById("altura").style.backgroundColor = "#ffffff";
@@ -10,7 +10,7 @@ async function calcularIMC() {
 
 Swal.fire({
   didOpen: () =>{
-    if(peso == "" ){
+    if(peso == "0" ){
     document.getElementById("peso").style.borderColor = "red";
     document.getElementById("peso").style.backgroundColor = "#ffa5e5";
     document.getElementById("peso").focus;
@@ -19,7 +19,7 @@ Swal.fire({
       title:"Falta infomação",
       text:"Coloque seu peso",
     });
-  }else if(altura == ""){
+  }else if(altura == "0"){
     document.getElementById("altura").style.borderColor = "red";
     document.getElementById("altura").style.backgroundColor = "#ffa5e5";
     document.getElementById("altura").focus;
@@ -32,39 +32,45 @@ Swal.fire({
     Swal.fire({
       icon:"warning",
       title:"ABAIXO DO PESO",
-      text:"Procure um profissional da saúde para mais informações",
+      text:"Seu IMC é: "+ imc.toFixed(2) +". Procure um profissional da saúde para mais informações",
     });
    }else if(imc < "25"){
      Swal.fire({
        icon:"success",
        title:"PESO IDEAL",
-       text:"Mantenha o peso para melhor condição de saúde",
+       text:"Seu IMC é: "+ imc.toFixed(2) +". Mantenha o peso para melhor condição de saúde",
      });
    }else if(imc < "30"){
      Swal.fire({
        icon:"warning",
        title:"SOBRE PESO",
-       text:"Fique atento!",
+       text:"Seu IMC é: "+ imc.toFixed(2) +". Fique atento!",
      });
    }else if(imc < "35"){
      Swal.fire({
        icon:"warning",
        title:"OBSIDADE GRAU I",
-       text:"Procure um profissional da saúde para mais informações",
+       text:"Seu IMC é: "+ imc.toFixed(2) +". Procure um profissional da saúde para mais informações",
      });
    }else if(imc < "40"){
      Swal.fire({
        icon:"warning",
        title:"OBSIDADE GRAU II",
-       text:"Procure um profissional da saúde para mais informações",
+       text:"Seu IMC é: "+ imc.toFixed(2) +". Procure um profissional da saúde para mais informações",
      });
-   }else{
+   }else if (imc > "41"){
      Swal.fire({
        icon:"warning",
        title:"OBSIDADE GRAU III",
-       text:"URGENTE! Procure um profissional da saúde para mais informações",
+       text:"Seu IMC é: "+ imc.toFixed(2) +". URGENTE! Procure um profissional da saúde para mais informações",
      });
-   };
+   }else{
+    Swal.fire({
+      icon:"error",
+      title:"Erro",
+      text:"Algum dado foi informado errado",
+    });
+   }
 
   
   
