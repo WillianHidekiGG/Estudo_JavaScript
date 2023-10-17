@@ -1,3 +1,18 @@
+// mostra a mensagem
+function mostarInformacao(){   
+   document.getElementById("informarIMC").style.display = "block";  
+ }
+ function mostarCalculo(){   
+  document.getElementById("mostarCalculo").style.display = "block";  
+}
+function mostarTabela(){   
+  document.getElementById("TabelaIMC").style.display = "block";  
+}
+// esconde a mensagem
+function esconderInformacao(){
+  document.getElementById("informarIMC").style.display = "none";  
+}
+
 async function calcularIMC() {
   var peso = parseFloat(document.getElementById("peso").value);
   var altura = parseFloat(document.getElementById("altura").value);
@@ -71,21 +86,6 @@ Swal.fire({
       text:"Algum dado foi informado errado",
     });
    }
-
-  
-  
   },
-
     });
-
-    
-    
-    
-
-  // var peso = parseFloat(document.getElementById("peso").value);
-  // var altura = parseFloat(document.getElementById("altura").value);
-  // var resultado = peso/(altura*altura);
-  // alert("seu IMC é: "+resultado);
-  // return true;
-  
 }

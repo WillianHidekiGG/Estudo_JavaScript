@@ -1,0 +1,74 @@
+body {
+    width: 100%;
+    height: auto;
+    position:absolute;
+    
+}
+#Titulo{
+    font-size:28px;
+}
+
+img{
+    width: 40px;
+    height: 56px;
+    padding: 42px  0 0 5px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+th{
+    width: 30vw;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+#informarIMC, #mostarCalculo{
+    display:none;
+    position:absolute;
+    bottom: 25%; /* Usei % para que voce entenda que da para se adaptar com o tamanho do botão/container ou qualquer outra coisa a qual a mensagem esta relacionada*/
+    left:0;
+    right:0;
+    margin: auto;
+    width:90vw;
+    height:21%;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    backdrop-filter:blur(50px);
+    -webkit-animation: para_baixo 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#TabelaIMC{
+    display: none;
+    position:absolute;
+    bottom: 25%; /* Usei % para que voce entenda que da para se adaptar com o tamanho do botão/container ou qualquer outra coisa a qual a mensagem esta relacionada*/
+    left:0;
+    right:0;
+    margin: auto;
+    width:55%;
+    height:300px;
+    backdrop-filter:blur(50px);
+    -webkit-animation: para_baixo_tabela 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes para_baixo {
+    from{
+      transform: translateY(35px);
+    }
+    to{
+      transform: translateY(40px);
+    }
+  }
+
+  @keyframes para_baixo_tabela {
+    from{
+      transform: translateY(50px);
+    }
+    to{
+      transform: translateY(40px);
+    }
+  }
