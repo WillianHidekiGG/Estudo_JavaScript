@@ -1,16 +1,29 @@
+var fecha = document.querySelectorAll(".janela");
+
 // mostra a mensagem
 function mostarInformacao(){   
    document.getElementById("informarIMC").style.display = "block";  
  }
  function mostarCalculo(){   
-  document.getElementById("mostarCalculo").style.display = "block";  
+  document.getElementById("Calculo").style.display = "block";  
 }
 function mostarTabela(){   
   document.getElementById("TabelaIMC").style.display = "block";  
 }
 // esconde a mensagem
 function esconderInformacao(){
-  document.getElementById("informarIMC").style.display = "none";  
+  if (document.getElementById("informarIMC").style.display == "block"  || document.getElementById("Calculo").style.display == "block"){
+    document.getElementById("informarIMC").style.display = "none";
+    document.getElementById("Calculo").style.display = "none";
+  }
+}
+
+function fecharTabela(){
+if( document.getElementById("TabelaIMC").style.display != "none"){
+  document.getElementById("TabelaIMC").style.display = "none";
+}else if(document.getElementById("TabelaIMC").style.display != "block"){
+  document.getElementById("TabelaIMC").style.display = "block";
+}
 }
 
 async function calcularIMC() {

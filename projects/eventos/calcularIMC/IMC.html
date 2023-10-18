@@ -19,26 +19,29 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
     <div class="flex-container">
-        <div  id="Titulo"><h1>IMC</h1></div>
+        <div  id="Titulo"><h1>CALCULAR IMC</h1></div>
         <img id="FitaMetrica" src="./img/FitaMetrica.png" alt="Fita Metrica"/>
     </div>
     <table class="flex-container">
         <thead>
             <tr>
-                <th onmouseover="mostarInformacao()" onmouseout="esconderInformacao()">O que é IMC</th>
+                <th class="informarIMC" onmouseover="mostarInformacao()" onmouseout="esconderInformacao()">O que é IMC</th>
                 <div id="informarIMC">O Índice de Massa Corporal, conhecido pela sigla IMC, criado no século 19 pelo matemático Lambert Quételet, é um cálculo simples que permite medir se alguém está ou não com o peso ideal. Ele aponta se o peso está adequado ou se está abaixo ou acima do peso. </div>
-                <th onmouseover="mostarCalculo()" onmouseout="esconderInformacao()">Como Calcular</th>
-                <div id="Calculo"></div>
-                <th onmouseover="mostarTabela()" onmouseout="esconderInformacao()">Tabela IMC</th>
-                <img id="TabelaIMC" src="./img/tabela_IMC.jpeg" />
+                <th class="calculo" onmouseover="mostarCalculo()" onmouseout="esconderInformacao()">Como Calcular</th>
+                <div id="Calculo">O IMC é reconhecido como padrão internacional para avaliar o grau de sobrepeso e obesidade. É calculado dividindo o peso (em kg) pela altura ao quadrado (em metros).<br/>
+                    <div id="formula">IMC = Peso ÷ (Altura × Altura)</div></div>
+                <th class="mostrarTabela" onclick="mostarTabela()" onmouseout="esconderInformacao()">Tabela IMC</th>
+                <div class="janela" id="TabelaIMC"><img id="imagem_tabela" src="./img/tabela_IMC.jpeg"/><button id="fechar" onclick="fecharTabela()">x</button></div>
             </tr>
         </thead>
     </table>
-    <form>
-        <div>CALCULAR SEU IMC:</div>
-        <label for="peso">Peso: </label> <input type="number" id="peso" name="peso" value="0"> Kg <br>
-        <label for="altura">Altura: </label> <input type="number" id="altura" name="altura" value="0"> Metros <br>
-        <button type="button" onclick="calcularIMC()">CALCULAR</button>
+    <form class="flex-container">
+        <div class="card sombra">
+            <div>CALCULAR SEU IMC:</div>
+            <label for="peso">Peso: </label> <input type="number" id="peso" name="peso" value="0"> Kg <br>
+            <label for="altura">Altura: </label> <input type="number" id="altura" name="altura" value="0"> Metros <br>
+            <button type="button" onclick="calcularIMC()">CALCULAR</button>
+        </div>
     </form>
 </body>
 </html>

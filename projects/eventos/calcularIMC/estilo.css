@@ -8,8 +8,8 @@ body {
     font-size:28px;
 }
 
-img{
-    width: 40px;
+#FitaMetrica{
+    width: 60px;
     height: 56px;
     padding: 42px  0 0 5px;
 }
@@ -21,46 +21,110 @@ img{
 
 th{
     width: 30vw;
+    height: 11vh;
     font-size: 20px;
-    border: 1px solid black;
 }
 
-#informarIMC, #mostarCalculo{
+.calculo, #Calculo{
+  background-color: #82F5CB;
+}
+
+#formula{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.informarIMC, #informarIMC {
+  background-color: rgb(130, 245, 163);
+}
+
+
+#informarIMC, #Calculo{
     display:none;
     position:absolute;
-    bottom: 25%; /* Usei % para que voce entenda que da para se adaptar com o tamanho do botão/container ou qualquer outra coisa a qual a mensagem esta relacionada*/
+    bottom: 44%; /* Usei % para que voce entenda que da para se adaptar com o tamanho do botão/container ou qualquer outra coisa a qual a mensagem esta relacionada*/
     left:0;
     right:0;
+    padding: 10px 10px 10px 35px;
     margin: auto;
-    width:90vw;
-    height:21%;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    width:1196px;
+    height:18%;
+    font-size: 25px;
+    -webkit-animation: para_baixo 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.janela{
+  width:1238px;
+  height:auto;
+}
+
+.mostrarTabela{
+  background-color: #BAF582;
+}
+#TabelaIMC{
+    display:none;
+    position:absolute;
+    bottom: -18%; /* Usei % para que voce entenda que da para se adaptar com o tamanho do botão/container ou qualquer outra coisa a qual a mensagem esta relacionada*/
+    left:0;
+    right:0;
+    margin: 0 auto;
+    background-color: #BAF582;
     backdrop-filter:blur(50px);
     -webkit-animation: para_baixo 1s;
     -webkit-animation-fill-mode: forwards;
 }
 
-#TabelaIMC{
-    display: none;
-    position:absolute;
-    bottom: 25%; /* Usei % para que voce entenda que da para se adaptar com o tamanho do botão/container ou qualquer outra coisa a qual a mensagem esta relacionada*/
-    left:0;
-    right:0;
-    margin: auto;
-    width:55%;
-    height:300px;
-    backdrop-filter:blur(50px);
-    -webkit-animation: para_baixo_tabela 1s;
-    -webkit-animation-fill-mode: forwards;
+#imagem_tabela{
+  display: flex;
+  position: relative;
+  width: 650px;
+  height: auto;
+  left: 25%;
 }
+ 
+#fechar{
+  display: flex;
+  position:absolute;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  z-index: 1;
+  border: none;
+  left: 97%;
+  top:10px;
+  background: #F58F82;
+  border-radius: 15%;
+  border-bottom:3px inset rgba(255, 255, 255, 0.5);
+  border-right: 3px inset rgba(255, 255, 255, 0.5);
+}
+
+.card {
+  width: 350px;
+  height: 254px;
+  background: white;
+  margin-top: 10px;
+  padding: 20px 0 0 10px;
+  border-radius: 10px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ }
+ 
+ .sombra {
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+              0 0  0 2px rgb(190, 190, 190),
+              0.3em 0.3em 1em rgba(0,0,0,0.3);
+ }
+ 
+ 
+
+
 @keyframes para_baixo {
     from{
-      transform: translateY(35px);
+      transform: translateY(45%);
     }
     to{
-      transform: translateY(40px);
+      transform: translateY(35%);
     }
   }
 
