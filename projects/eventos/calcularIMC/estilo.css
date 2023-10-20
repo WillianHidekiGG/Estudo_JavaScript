@@ -57,7 +57,12 @@ th{
 
 .janela{
   width:1238px;
-  height:auto;
+  height:600px;
+  border-style: solid;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
 }
 
 .mostrarTabela{
@@ -66,7 +71,7 @@ th{
 #TabelaIMC{
     display:none;
     position:absolute;
-    bottom: -18%; /* Usei % para que voce entenda que da para se adaptar com o tamanho do botão/container ou qualquer outra coisa a qual a mensagem esta relacionada*/
+    bottom: -20%; /* Usei % para que voce entenda que da para se adaptar com o tamanho do botão/container ou qualquer outra coisa a qual a mensagem esta relacionada*/
     left:0;
     right:0;
     margin: 0 auto;
@@ -81,6 +86,7 @@ th{
   position: relative;
   width: 650px;
   height: auto;
+  margin-top: 10px;
   left: 25%;
 }
  
@@ -116,8 +122,32 @@ th{
               0.3em 0.3em 1em rgba(0,0,0,0.3);
  }
  
+ .titulo1{
+  text-align: center;
+ }
  
+#peso, #altura{
+  margin-top: 3%;
+}
 
+.peso, .altura{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+input{
+  height: 25px;
+  width: 255px;
+  margin: 0 15px auto; /* adição de margem automática */
+  min-width: 50%;
+}
+
+.botao{
+  display: flex;
+  justify-content: center;
+  height: 35px;  
+  margin-top: 7%;
+  border-radius: 45px;
+}
 
 @keyframes para_baixo {
     from{
