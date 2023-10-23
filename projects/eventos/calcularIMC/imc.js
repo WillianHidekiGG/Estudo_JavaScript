@@ -1,8 +1,7 @@
-var fecha = document.querySelectorAll(".janela");
-
 // mostra a mensagem
 function mostarInformacao(){   
-   document.getElementById("informarIMC").style.display = "block";  
+   document.getElementById("informarIMC").style.display = "block";
+
  }
  function mostarCalculo(){   
   document.getElementById("Calculo").style.display = "block";  

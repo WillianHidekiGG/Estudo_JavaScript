@@ -59,10 +59,16 @@ th{
     -webkit-animation-fill-mode: forwards;
 }
 
+tr:hover > :not(:hover) {
+  filter: blur(10px);
+}
+
 
 .mostrarTabela{
   background-color: #BAF582;
   font-size: 45px;
+  cursor: pointer;
+
 }
 #TabelaIMC{
     display:none;
@@ -75,7 +81,9 @@ th{
     background-color: #BAF582;
     -webkit-animation: para_baixo 1s;
     -webkit-animation-fill-mode: forwards;
+    z-index: 1;
 }
+
 
 #imagem_tabela{
   display: flex;
@@ -110,6 +118,7 @@ th{
   padding: 20px 0 0 10px;
   border-radius: 10px;
   transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
  }
  
  .sombra {
@@ -192,15 +201,9 @@ input[type=number] {
 }
 
 
-.botao{
-  display: flex;
-  justify-content: center;
+.botao {
   height: 35px;  
   margin-top: 7%;
-  border-radius: 45px;
-}
-
-button {
   font-size: 18px;
   color: #000000;
   font-family: inherit;
@@ -215,19 +218,19 @@ button {
   transition-property: color;
 }
 
-button:focus,
-button:hover {
+.botao:focus,
+.botao:hover {
   color: #000000;
 }
 
-button:focus:after,
-button:hover:after {
+.botao:focus:after,
+.botao:hover:after {
   width: 100%;
   left: 0%;
 }
 
 
-button:after {
+.botao:after {
   content: "";
   pointer-events: none;
   bottom: -2px;
