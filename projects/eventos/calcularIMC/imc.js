@@ -6,7 +6,7 @@ function mostarInformacao(){
  function mostarCalculo(){   
   document.getElementById("Calculo").style.display = "block";  
 }
-function mostarTabela(){   
+function mostarTabela(){     
   document.getElementById("TabelaIMC").style.display = "block";  
 }
 // esconde a mensagem

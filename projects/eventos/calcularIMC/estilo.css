@@ -27,10 +27,11 @@ th{
     width: 30vw;
     height: 11vh;
     font-size: 45px;
+    cursor: pointer;
 }
 
 .calculo, #Calculo{
-  background-color: #82F5CB;
+  background-color: rgba(130, 245, 203,0.8);
 }
 
 #formula{
@@ -40,14 +41,16 @@ th{
 }
 
 .informarIMC, #informarIMC {
-  background-color: rgb(130, 245, 163);
+  background-color: rgba(130, 245, 163,0.8);
 }
+
+
 
 
 #informarIMC, #Calculo{
     display:none;
     position:absolute;
-    bottom:53%; /* Usei % para que voce entenda que da para se adaptar com o tamanho do botão/container ou qualquer outra coisa a qual a mensagem esta relacionada*/
+    bottom:52.4%; /* Usei % para que voce entenda que da para se adaptar com o tamanho do botão/container ou qualquer outra coisa a qual a mensagem esta relacionada*/
     left:0;
     right:0;
     padding: 10px 10px 10px 35px;
@@ -57,28 +60,33 @@ th{
     font-size: 25px;
     -webkit-animation: para_baixo 1s;
     -webkit-animation-fill-mode: forwards;
+    z-index: 1;
 }
+
+
 
 tr:hover > :not(:hover) {
   filter: blur(10px);
 }
+:hover > .blur:not(:hover) {
+  filter: blur(10px);
+}
+
 
 
 .mostrarTabela{
-  background-color: #BAF582;
+  background-color: rgba(186, 245, 130, 0.8);
   font-size: 45px;
-  cursor: pointer;
-
 }
 #TabelaIMC{
     display:none;
     width:90.8%;
     position:absolute;
-    bottom: 2.8vw;
+    bottom: 2.3vw;
     left:0;
     right:0;
     margin: 0 auto;
-    background-color: #BAF582;
+    background-color: rgba(186, 245, 130,0.8);
     -webkit-animation: para_baixo 1s;
     -webkit-animation-fill-mode: forwards;
     z-index: 1;
@@ -136,6 +144,8 @@ tr:hover > :not(:hover) {
   }
 }
 
+
+
 @keyframes para_baixo_tabela {
   from{
     transform: translateY(50px);
@@ -144,6 +154,7 @@ tr:hover > :not(:hover) {
     transform: translateY(40px);
   }
 }
+
  
  .titulo1{
   text-align: center;
